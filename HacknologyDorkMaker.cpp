@@ -27,7 +27,12 @@ class dorkYap{
 				string dorkd = dork5 + line; 
 				cout << dork << endl << dorka << endl << dorkb << endl << dorkc << endl << dorkd << endl;
 				ofstream yeni("dorks.txt");
-				yeni << dork << endl << dorka << endl << dorkb << endl << dorkc << endl << dorkd << endl;
+				yeni << dork << endl;
+				yeni << dorka << endl;
+				yeni << dorkb << endl;
+				yeni << dorkc << endl;
+				yeni << dorkd << endl;
+				yeni.close();
 		}		
 	}
 		
