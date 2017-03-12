@@ -1,0 +1,5 @@
+example_word1
+example_word2
+example_word3
+example_word4
+example_word5
