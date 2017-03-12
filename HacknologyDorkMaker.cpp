@@ -1,12 +1,11 @@
 #include <iostream>
 #include <conio.h>
 #include <string>
-#include <windows.h>
 #include <tchar.h>
 #include <stdio.h>
-#include <Lmcons.h>
 #include <stdlib.h>
 #include <fstream>
+#include <locale.h>
 using namespace std;
 class dorkYap{
 	public:
@@ -26,7 +25,7 @@ class dorkYap{
 				string dorkc = dork4 + line;
 				string dorkd = dork5 + line; 
 				cout << dork << endl << dorka << endl << dorkb << endl << dorkc << endl << dorkd << endl;
-				ofstream yeni("dorks.txt");
+				ofstream yeni("dorks.txt", ios::app);
 				yeni << dork << endl;
 				yeni << dorka << endl;
 				yeni << dorkb << endl;
@@ -38,8 +37,9 @@ class dorkYap{
 		
 }islet;
 main(){
+	setlocale(LC_ALL,"Turkish");
 	int secim;
-	cout << "Hacknology DorkMaker'a hoþ geldiniz. Seçiminizi yapýn. \n 1)Baslat \n 2)Cikis \n >> ";
+	cout << "Hacknology DorkMaker'a hoş geldiniz. Seçiminizi yapın. \n 1)Baslat \n 2)Cikis \n >> ";
 	cin >> secim;
 	switch(secim){
 	case 1:
@@ -48,5 +48,6 @@ main(){
 		break;
 	case 2:
 		exit(1);
+	
 }
 }
