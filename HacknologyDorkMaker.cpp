@@ -34,11 +34,12 @@ class dorkYap{
 }islet;
 main(){
 	int secim;
-	cout << "Hacknology DorkMaker'a hoþ geldiniz. Seçiminizi yapýn. \n 1)Baslat \n 2)Cikis \n >> ";
+	cout << "Hacknology DorkMaker'a hoÃ¾ geldiniz. SeÃ§iminizi yapÃ½n. \n 1)Baslat \n 2)Cikis \n >> ";
 	cin >> secim;
 	switch(secim){
 	case 1:
 		islet.wordlistli();
+		getch();
 		break;
 	case 2:
 		exit(1);
